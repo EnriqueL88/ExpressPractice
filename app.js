@@ -1,5 +1,6 @@
 const express = require ('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 
 
@@ -16,4 +17,4 @@ app.get('/contact', (req, res) => {
 	res.send('Refer to: www.google.com');
 });
 
-app.listen (3000);
+app.listen (port);
